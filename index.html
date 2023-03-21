@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+    <style>
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+        #parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: aquamarine;
+            border-radius: 20px;
+            padding: 20px;
+            min-width: 240px;
+        }
+        .btn-div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #count{
+            font-size: 30px;
+            margin: 25px 0;
+        }
+        button{
+            font-size: 18px;
+            padding: 7px 15px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.155);
+        }
+        button:hover{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Set Interval and Clear Interval</h1>
+        <div id="parent">
+            <p id="count">0</p>
+            <div class="btn-div">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
